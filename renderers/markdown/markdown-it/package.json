@@ -25,6 +25,7 @@
     "dist/src"
   ],
   "scripts": {
+    "prebuild": "npm --prefix ../../web_core install && npm --prefix ../../web_core run build",
     "build": "wireit",
     "format": "prettier --ignore-path ../.gitignore --write .",
     "format:check": "prettier --ignore-path ../.gitignore --check .",
